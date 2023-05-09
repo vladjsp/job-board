@@ -1,11 +1,13 @@
 import React from 'react';
 
-const JobItem = ({ logo, title, company, location, level, department, featured }) => {
+const JobListItem = ({ logo, title, company, location, level, department, featured }) => {
   return (
     <div>
       <a
         href='#'
-        className='flex px-4 py-5 justify-between items-center rounded-xl bg-[#fffefa] border-[#ffde6a] border-[1px]'>
+        className={`flex px-4 py-5 justify-between items-center rounded-xl bg-[#fffefa] ${
+          featured ? 'border-[#ffde6a]' : 'border-[#e4e4ed]'
+        } border-[1px] ${featured ? '' : 'hover:border-sky-600'} `}>
         <div className='flex min-w-[217px] mr-8 items-center'>
           <div className='flex items-center max-w-[58px] mr-5 rounded-lg border-[1px] border-solid border-[#e4e4ed]'>
             <img
@@ -76,4 +78,4 @@ const JobItem = ({ logo, title, company, location, level, department, featured }
   );
 };
 
-export default JobItem;
+export default JobListItem;

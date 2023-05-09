@@ -1,6 +1,8 @@
 import LocationInput from './ui-elements/LocationInput';
 import SelectInput from './ui-elements/SelectInput';
 
+import { ChartBarIcon } from '@heroicons/react/20/solid';
+
 const filters = [
   {
     name: 'Location',
@@ -21,16 +23,18 @@ const filters = [
 
 const FilterForm = () => {
   return (
-    <div className='relative px-10 py-11 z-10 flex overflow-visible mb-16 justify-between items-center border-solid border-[1px] rounded-2xl shadow-sm mx-auto'>
-      <LocationInput />
-      {filters.map((filter, i) => (
-        <SelectInput
-          key={filter.name}
-          title={filter.name}
-          options={filter.options}
-          image={filter.img}
-        />
-      ))}
+    <div className='container px-2'>
+      <div className='relative px-10 py-11 z-10 flex overflow-visible mb-16 justify-between items-center border-solid border-[1px] rounded-2xl shadow-sm mx-auto bg-white max-[720px]:flex-col'>
+        <LocationInput />
+        {filters.map((filter, i) => (
+          <SelectInput
+            key={filter.name}
+            title={filter.name}
+            options={filter.options}
+            image={filter.img}
+          />
+        ))}
+      </div>
     </div>
   );
 };

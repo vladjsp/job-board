@@ -1,8 +1,6 @@
-const Button = ({ text, type }) => {
+const Button = ({ text = 'Button', type = 'button', styles }) => {
   return (
-    <button
-      type={type}
-      className='flex-none py-4 px-6 text-base font-semibold bg-[#0061ff] text-white rounded-full'>
+    <button type={type} className={`flex-none py-4 px-6 text-base rounded-full ${styles}`}>
       {text}
     </button>
   );
