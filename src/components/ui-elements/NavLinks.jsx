@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { headerLinks } from '../../helpers/headerLinks';
-
+import { headerLinks } from '../../data/headerLinks';
+import { nanoid } from 'nanoid';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid';
 
 const NavLinks = () => {
@@ -9,7 +9,7 @@ const NavLinks = () => {
   return (
     <>
       {headerLinks.map((link) => (
-        <div>
+        <div key={nanoid()}>
           <div className='px-3 text-left md:cursor-pointer group'>
             <h1
               className='py-7 flex justify-between items-center md:pr-0 pr-5 group'
@@ -35,10 +35,10 @@ const NavLinks = () => {
                   </div>
                   <div className='bg-white p-5 grid grid-cols-3 gap-10'>
                     {link.sublinks.map((mysublinks) => (
-                      <div>
+                      <div key={nanoid()}>
                         <h1 className='text-lg'>{mysublinks.Head}</h1>
                         {mysublinks.sublink.map((slink) => (
-                          <li className='text-sm text-gray-600 my-2.5'>
+                          <li className='text-sm text-gray-600 my-2.5' key={nanoid()}>
                             <a to={slink.link} className='hover:text-primary'>
                               {slink.name}
                             </a>
@@ -58,7 +58,7 @@ const NavLinks = () => {
           `}>
             {/* sublinks */}
             {link.sublinks.map((slinks) => (
-              <div>
+              <div key={nanoid()}>
                 <div>
                   <h1
                     onClick={() =>
@@ -73,7 +73,7 @@ const NavLinks = () => {
                   </h1>
                   <div className={`${subHeading === slinks.Head ? 'md:hidden' : 'hidden'}`}>
                     {slinks.sublink.map((slink) => (
-                      <li className='py-3 pl-14'>
+                      <li className='py-3 pl-14' key={nanoid()}>
                         <a to={slink.link}>{slink.name}</a>
                       </li>
                     ))}

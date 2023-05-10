@@ -25,18 +25,18 @@ const Header = ({ toggleCart }) => {
             </div>
             <ul className='md:flex hidden items-center gap-8'>
               <li>
-                <a to='/' className='py-7 px-3 inline-block'>
+                <a to='/' className='py-7 px-3 inline-block cursor-pointer'>
                   Home
                 </a>
               </li>
               <li>
-                <a to='/' className='py-7 px-3 inline-block'>
+                <a to='/' className='py-7 px-3 inline-block cursor-pointer'>
                   About
                 </a>
               </li>
               <NavLinks />
               <li>
-                <a to='/' className='py-7 px-3 inline-block'>
+                <a to='/' className='py-7 px-3 inline-block cursor-pointer'>
                   Contact
                 </a>
               </li>

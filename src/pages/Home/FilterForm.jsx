@@ -1,5 +1,5 @@
-import LocationInput from './ui-elements/LocationInput';
-import SelectInput from './ui-elements/SelectInput';
+import LocationInput from '../../components/ui-elements/LocationInput';
+import SelectInput from '../../components/ui-elements/SelectInput';
 
 import { ChartBarIcon } from '@heroicons/react/20/solid';
 

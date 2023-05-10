@@ -15,9 +15,12 @@ import pinterestLogoGray from './pinterest-logo-gray.svg';
 import webflowLogoGray from './webflow-logo-gray.svg';
 import youtubeLogoGray from './youtube-logo-gray.svg';
 
-//Imgs for other pages
+//Imgs for About page
 import about1 from './about1.jpg';
 import about2 from './about2.jpeg';
+import testimonial1 from './image-about-testimonials-1.png';
+import testimonial2 from './image-about-testimonials-2.png';
+import testimonial3 from './image-about-testimonials-3.png';
 
 export {
   logo,
@@ -34,4 +37,7 @@ export {
   youtubeLogoGray,
   about1,
   about2,
+  testimonial1,
+  testimonial2,
+  testimonial3,
 };

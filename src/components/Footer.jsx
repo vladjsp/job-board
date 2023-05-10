@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid';
-import { leftBlockLinks, rightBlockLinks } from '../helpers/footerLinks';
+import { leftBlockLinks, rightBlockLinks } from '../data/footerLinks';
 
 import SubscribeFooterSection from './SubscribeFooterSection';
 import CopyrightFooter from './ui-elements/CopyrightFooter';

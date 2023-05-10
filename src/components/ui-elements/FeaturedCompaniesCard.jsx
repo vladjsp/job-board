@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 
-import { featuredCompanies } from '../../helpers/featuredCompanies';
+import { featuredCompanies } from '../../data/featuredCompanies';
 
 import FeaturedCompaniesCardItem from './FeaturedCompaniesCardItem';
 

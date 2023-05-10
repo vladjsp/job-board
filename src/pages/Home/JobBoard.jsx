@@ -1,12 +1,12 @@
 import { nanoid } from 'nanoid';
 
-import { jobsList } from '../helpers/latestJobs';
-import { featuredJobs } from '../helpers/featuredJobs';
+import { jobsList } from '../../data/latestJobs';
+import { featuredJobs } from '../../data/featuredJobs';
 
-import JobListItem from './ui-elements/JobsListItem';
-import CardJobPost from './ui-elements/CardJobPost';
-import FeaturedCompaniesCard from './ui-elements/FeaturedCompaniesCard';
-import Button from './ui-elements/Button';
+import JobListItem from '../../components/ui-elements/JobsListItem';
+import CardJobPost from '../../components/ui-elements/CardJobPost';
+import FeaturedCompaniesCard from '../../components/ui-elements/FeaturedCompaniesCard';
+import Button from '../../components/ui-elements/Button';
 
 const JobBoard = () => {
   return (
