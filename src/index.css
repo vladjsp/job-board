@@ -17,9 +17,29 @@ body {
   line-height: 1.75em;
 }
 
+.card {
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4ed;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 3px 7px 0 rgba(8, 15, 52, 0.03);
+  transform: translate(0px, 0px);
+}
+
+.contact-form {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 27px;
+  grid-row-gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
 .slide {
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
     skew(0deg);
-  transform-style: preserve-3d;
   opacity: 1;
+  transform-style: preserve-3d;
 }

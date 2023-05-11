@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import NavLinks from './ui-elements/NavLinks';
 import Button from './ui-elements/Button';
@@ -25,24 +26,34 @@ const Header = ({ toggleCart }) => {
             </div>
             <ul className='md:flex hidden items-center gap-8'>
               <li>
-                <a to='/' className='py-7 px-3 inline-block cursor-pointer'>
+                <Link
+                  to='/'
+                  className='py-7 px-3 text-[#171728] inline-block cursor-pointer hover:text-sky-600'>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a to='/' className='py-7 px-3 inline-block cursor-pointer'>
+                <Link
+                  to='/about'
+                  className='py-7 px-3 text-[#171728] inline-block cursor-pointer hover:text-sky-600'>
                   About
-                </a>
+                </Link>
               </li>
               <NavLinks />
               <li>
-                <a to='/' className='py-7 px-3 inline-block cursor-pointer'>
+                <Link
+                  to='/contact'
+                  className='py-7 text-[#171728] px-3 inline-block cursor-pointer hover:text-sky-600'>
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
             <div className='md:block hidden'>
-              <Button />
+              <Button
+                type='button'
+                text='Post a job'
+                styles='rounded-full bg-sky-600 hover:bg-sky-700 py-4 px-6 text-white font-medium text-center inline-block border-none'
+              />
             </div>
             {/* Mobile nav */}
             <ul
@@ -51,9 +62,9 @@ const Header = ({ toggleCart }) => {
         duration-500 ${mobileMenuOpen ? 'left-0' : 'left-[-100%]'}
         `}>
               <li>
-                <a to='/' className='py-7 px-3 inline-block'>
+                <Link to='/' className='py-7 px-3 inline-block'>
                   Home
-                </a>
+                </Link>
               </li>
               <NavLinks />
               <div className='py-5'>

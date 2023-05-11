@@ -2,7 +2,7 @@ import Carousel from '../../components/Carousel';
 
 const Testimonials = () => {
   return (
-    <div className='overflow-hidden pb-24 pt-36'>
+    <div className='overflow-hidden py-14'>
       <div className='mb-10 text-center max-w-[541px] mx-auto px-6'>
         <h2 className='mt-0 mb-4 text-[#171728] text-3xl font-medium text-center'>
           What recruiters say about us

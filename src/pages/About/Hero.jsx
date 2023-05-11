@@ -1,11 +1,10 @@
-import Companies from '../../components/Companies';
 import { about1, about2 } from '../../assets';
 
 const Hero = () => {
   return (
-    <div className='pt-16 pb-28'>
+    <div className='pt-16 pb-8'>
       <div className='container'>
-        <div className='flex mb-30 justify-between'>
+        <div className='flex mb-5 justify-between'>
           <div className='max-w-[586px] mr-7'>
             <div className='max-w-[570px] mb-16'>
               <h1 className='mb-5 mt-0 text-[#171728] text-5xl font-medium'>About our job board</h1>
@@ -36,7 +35,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <Companies />
       </div>
     </div>
   );

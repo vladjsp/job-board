@@ -18,7 +18,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className='max-w-[1088px] mx-auto px-6'>
+    <div className='max-w-[1088px] mx-auto px-6 my-10'>
       <div className=' overflow-hidden relative'>
         <div
           className='flex transition-transform ease-out duration-500 '
@@ -36,14 +36,14 @@ const Carousel = () => {
           ))}
         </div>
 
-        <div className='absolute inset-0 flex justify-between items-center p-4 z-20'>
+        <div className='absolute inset-0 flex justify-between items-center z-20'>
           <button
-            className='p-1 w-[40px] rounded-full shadow bg-white/80 text-gray-800 hover:bg-white'
+            className=' flex items-center justify-center w-[40px] h-[40px] rounded-full shadow bg-white/80 text-gray-800 hover:bg-white'
             onClick={prev}>
             <ChevronLeftIcon className='w-[20px]' />
           </button>
           <button
-            className='p-1 w-[40px] rounded-full shadow bg-white/80 text-gray-800 hover:bg-white'
+            className=' flex items-center justify-center w-[40px] h-[40px] rounded-full shadow bg-white/80 text-gray-800 hover:bg-white'
             onClick={next}>
             <ChevronRightIcon className='w-[20px]' />
           </button>

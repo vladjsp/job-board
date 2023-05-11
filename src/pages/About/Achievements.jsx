@@ -2,7 +2,7 @@ import Button from '../../components/ui-elements/Button';
 
 const Achievements = () => {
   return (
-    <div className='py-36 bg-[#fafafa]'>
+    <div className='py-16 bg-[#fafafa]'>
       <div className='container'>
         <div className='flex justify-between items-center'>
           <div className='max-w-[425px] mr-7'>
