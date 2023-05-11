@@ -7,7 +7,9 @@ const About = () => {
     <>
       <Hero />
       <Achievements />
-      <Carousel />
+      <div className='max-w-full mx-auto px-6'>
+        <Carousel />
+      </div>
     </>
   );
 };

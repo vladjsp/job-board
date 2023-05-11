@@ -23,17 +23,21 @@ const filters = [
 
 const FilterForm = () => {
   return (
-    <div className='container px-2'>
-      <div className='relative px-10 py-11 z-10 flex overflow-visible mb-16 justify-between items-center border-solid border-[1px] rounded-2xl shadow-sm mx-auto bg-white max-[720px]:flex-col'>
-        <LocationInput />
-        {filters.map((filter, i) => (
-          <SelectInput
-            key={filter.name}
-            title={filter.name}
-            options={filter.options}
-            image={filter.img}
-          />
-        ))}
+    <div className='container'>
+      <div className='relative p-6 z-10 flex flex-wrap flex-col mx-auto  lg:flex-row mb-16 justify-center lg:justify-between items-center border border-solid rounded-2xl shadow-sm bg-white '>
+        <div className=' w-[80%] mb-3 justify-center items-center mx-auto md:max-w-[420px]'>
+          <LocationInput />
+        </div>
+        <div className='flex flex-col w-[80%] gap-3 justify-center items-center mx-auto md:max-w-[684px] md:flex-row '>
+          {filters.map((filter, i) => (
+            <SelectInput
+              key={filter.name}
+              title={filter.name}
+              options={filter.options}
+              image={filter.img}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

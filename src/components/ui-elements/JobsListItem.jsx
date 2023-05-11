@@ -2,14 +2,14 @@ import React from 'react';
 
 const JobListItem = ({ logo, title, company, location, level, department, featured }) => {
   return (
-    <div>
+    <div className=''>
       <a
         href='#'
-        className={`flex px-4 py-5 justify-between items-center rounded-xl bg-[#fffefa] ${
+        className={`flex flex-col lg:flex-row px-4 py-5 justify-between items-left lg:items-center rounded-xl bg-[#fffefa] ${
           featured ? 'border-[#ffde6a]' : 'border-[#e4e4ed]'
         } border-[1px] ${featured ? '' : 'hover:border-sky-600'} `}>
-        <div className='flex min-w-[217px] mr-8 items-center'>
-          <div className='flex items-center max-w-[58px] mr-5 rounded-lg border-[1px] border-solid border-[#e4e4ed]'>
+        <div className='flex flex-row items-left lg:items-center lg:flex-row  min-w-[217px] lg:mr-8'>
+          <div className='flex lg:items-center max-w-[58px] mr-5 rounded-lg border-[1px] border-solid border-[#e4e4ed]'>
             <img
               src={logo}
               className='w-full object-cover inline-block max-w-full rounded-lg'
@@ -17,8 +17,8 @@ const JobListItem = ({ logo, title, company, location, level, department, featur
             />
           </div>
           <div className=''>
-            <h3 className='mb-2 text-base text-[#171728] leading-6 mt-0'>{title}</h3>
-            <div className='flex items-start text-[#686781]'>
+            <h3 className='mb-2 text-base font-medium text-[#171728] leading-6 mt-0'>{title}</h3>
+            <div className='flex mb-2 lf:mb-0 items-start text-[#686781]'>
               <p className='text-[#33334e] mr-2 underline decoration-1'>{company}</p>
               <div className='relative top-1'>
                 <svg
@@ -40,7 +40,7 @@ const JobListItem = ({ logo, title, company, location, level, department, featur
         </div>
         <div className='flex w-full max-w-[387px] justify-between items-center'>
           <div className=''>
-            <div className='flex mb-3 items-center text-[14px] text-[#686781]'>
+            <div className='flex lg:mb-3 items-center text-[14px] text-[#686781]'>
               <img
                 src='https://assets.website-files.com/60c77302fcfa2b84ab595f64/60c7dc5172557266c1162fc4_icon-1-job-categories-job-board-x-template.svg'
                 alt=''
@@ -51,7 +51,7 @@ const JobListItem = ({ logo, title, company, location, level, department, featur
             <p className='text-[#171728] leading-5 font-medium'>{location}</p>
           </div>
           <div className=''>
-            <div className='flex mb-3 items-center text-[14px] text-[#686781]'>
+            <div className='flex lg:mb-3 items-center text-[14px] text-[#686781]'>
               <img
                 src='https://assets.website-files.com/60c77302fcfa2b84ab595f64/60c7dc51b6792171f081ab50_icon-2-job-categories-job-board-x-template.svg'
                 alt=''
@@ -62,7 +62,7 @@ const JobListItem = ({ logo, title, company, location, level, department, featur
             <p className='text-[#171728] leading-5 font-medium'>{level}</p>
           </div>
           <div className=''>
-            <div className='flex mb-3 items-center text-[14px] text-[#686781]'>
+            <div className='flex lg:mb-3 items-center text-[14px] text-[#686781]'>
               <img
                 src='https://assets.website-files.com/60c77302fcfa2b84ab595f64/60c7dc51c1dfba2485657961_icon-3-job-categories-job-board-x-template.svg'
                 alt=''

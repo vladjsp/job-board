@@ -12,9 +12,9 @@ const Header = ({ toggleCart }) => {
 
   return (
     <header className='relative z-40 bg-[#fff]'>
-      <div className='container px-2'>
+      <div className='container'>
         <nav className='bg-white'>
-          <div className='flex items-center justify-around'>
+          <div className='flex items-center justify-between'>
             <div className='z-50 p-5 md:w-auto w-full flex justify-between'>
               <img src={logo} className='md:cursor-pointer h-9' alt='Company logo' />
               <div

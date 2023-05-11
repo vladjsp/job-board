@@ -3,7 +3,7 @@ import Button from './Button';
 
 const CardJobPost = () => {
   return (
-    <div className='mb-10 px-[32px] pt-10 pb-12 border-solid border-[1px] border-[#e4e4ed] rounded-2xl shadow-sm'>
+    <div className='mb-10 px-8 pt-10 pb-12 border-solid border border-[#e4e4ed] rounded-2xl shadow-sm'>
       <div className=''>
         <div className='max-w-[58px] mb-5 rounded-lg flex items-center'>
           <BriefcaseIcon className='text-sky-600 w-full object-cover inline-block' />

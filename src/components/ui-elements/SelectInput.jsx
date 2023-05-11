@@ -6,7 +6,7 @@ const SelectInput = ({ title, options, image }) => {
 
   return (
     <div
-      className='w-full max-w-[220px] mr-1 leading-5 relative inline-block text-left ml-auto z-40'
+      className='w-full mx-auto lg:mr-1 lg:ml-auto leading-5 relative inline-block text-left'
       onClick={() => setIsOpen(!isOpen)}>
       <div className='flex min-h-[68px] px-6 items-center border-solid border-[1px] border-gray-400 rounded-full cursor-pointer hover:border-sky-600 '>
         <img src={image} alt='icon' className='max-w-[19px] mr-3 inline-block border-none' />
@@ -32,7 +32,7 @@ const SelectInput = ({ title, options, image }) => {
           className='max-w-[13px] min-w-[13px] ml-auto  inline-block text-[#222] text-left whitespace-nowrap'
         /> */}
         {isOpen && (
-          <div className='bg-[#fff] absolute top-20 left-0 flex flex-col items-start p-2 w-full shadow-md rounded-2xl z-50'>
+          <div className='bg-[#fff] opacity-100 absolute top-20 left-0 flex flex-col items-start p-2 w-full shadow-md rounded-2xl z-50'>
             {options.map((item) => (
               <ul className='w-full' key={item}>
                 <li className='p-2 hover:text-sky-600' onClick={() => setIsOpen(false)}>

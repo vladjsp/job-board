@@ -6,24 +6,22 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 import { slides } from '../data/slidesCarousel';
 
-import { testimonial1, testimonial2, testimonial3 } from '../assets';
-
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
 
   const prev = () => {
-    setCurrentSlide((currentSlide) => (currentSlide === 0 ? slides.length : currentSlide - 1));
+    setCurrentSlide((currentSlide) => (currentSlide === 0 ? slides.length - 1 : currentSlide - 1));
     console.log(currentSlide);
   };
   const next = () => {
-    setCurrentSlide((currentSlide) => (currentSlide === slides.length ? 0 : currentSlide + 1));
+    setCurrentSlide((currentSlide) => (currentSlide === slides.length - 1 ? 0 : currentSlide + 1));
   };
 
   return (
     <div className='max-w-[1088px] mx-auto px-6'>
-      <div className='px-16 h-full bg-transparent relative text-center clear-both bg-[#dddddd] whitespace-nowrap overflow-hidden slide '>
+      <div className=' overflow-hidden relative'>
         <div
-          className='max-w-[872px] mx-auto overflow-hidden border border-solid border-[#e4e4ed] rounded-2xl shadow-sm relative block z-10  whitespace-nowrap text-center transition-transform ease-out duration-500'
+          className='flex transition-transform ease-out duration-500 '
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
           {slides.map((slide) => (
             <Slide

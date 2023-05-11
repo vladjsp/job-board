@@ -9,28 +9,32 @@ const Slide = ({
   company = 'Company',
 }) => {
   return (
-    <div className='px-14 pb-20 relative inline-block align-top w-full h-full whitespace-normal text-left translate-x-0 opacity-100 transition-transform'>
-      <div className='flex justify-between items-end text-left whitespace-normal'>
-        <div className='max-w-[468px] mr-7 mb-2 text-left whitespace-normal'>
-          <h3 className='mb-4 mt-0 text-2xl font-medium text-[#171728]  text-left whitespace-normal '>
+    <div className='block min-w-full lg:max-w-4xl mx-auto '>
+      <div className='flex flex-col-reverse lg:flex-row max-w-4xl justify-between items-end text-left whitespace-normal mx-auto px-14 pb-16 border border-solid border-[#e4e4ed] rounded-2xl shadow-sm'>
+        <div className='max-w-[468px] mb-2 items-end text-left whitespace-normal mx-auto lg:mr-7 '>
+          <h3 className='mb-4 mt-0 text-2xl font-medium text-[#171728]  text-center md:text-left  whitespace-normal '>
             {title}
           </h3>
-          <p className='mb-10 mt-0 text-left whitespace-normal'>{description}</p>
-          <div className='flex justify-between items-center text-left whitespace-normal'>
-            <div className='mr-7 text-left'>
-              <div className='mb-1 font-medium text-lg text-[#171728] text-left'>{name}</div>
-              <div className='text-[#8c8c9e] text-left whitespace-normal'>{position}</div>
+          <p className='mb-10 mt-0 text-center md:text-left whitespace-normal'>{description}</p>
+          <div className='flex flex-col md:flex-row justify-between whitespace-normal'>
+            <div className='text-center md:text-left'>
+              <div className='mb-1 font-medium text-lg text-[#171728] text-center md:text-left'>
+                {name}
+              </div>
+              <div className='text-[#8c8c9e] text-center md:text-left whitespace-normal mx-auto'>
+                {position}
+              </div>
             </div>
             <img
               src={getCompanyLogo(company)}
-              className='w-[236px] max-w-full inline-block border-none text-left whitespace-normal'
+              className='max-w-full inline-block border-none whitespace-normal mx-auto p-2'
               alt='company logo'
             />
           </div>
         </div>
         <img
           src={getTestimonialPhoto(id)}
-          className='w-[236px] inline-block border-none text-left'
+          className=' max-w-[180px] md:max-w-[200px] lg:max-w-[236px] inline-block border-none mx-auto text-left'
           alt='testimonial portret'
         />
       </div>
